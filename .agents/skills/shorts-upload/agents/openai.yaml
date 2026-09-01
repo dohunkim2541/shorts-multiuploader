@@ -1,0 +1,8 @@
+interface:
+  display_name: "Shorts Multiuploader"
+  short_description: "Cross-post configured YouTube Shorts with verified, cell-level recovery"
+  brand_color: "#FF0033"
+  default_prompt: "Cross-post the requested Shorts from YOUTUBE_HANDLE to TARGET_PLATFORMS. Run the code pipeline from the repository root using .env and content policies. Use Browser/Computer only for failed cells or inconclusive verification, finish healthy cells before blockers, and never duplicate-upload without fresh verification."
+
+policy:
+  allow_implicit_invocation: true

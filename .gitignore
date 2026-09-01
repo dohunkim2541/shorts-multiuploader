@@ -1,0 +1,46 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+config/content-policies.json
+
+# Local runtime data. These often contain cookies, account IDs, post traces,
+# screenshots, uploaded media, or private scheduling state.
+data/*
+!data/.gitkeep
+!data/downloads/
+data/downloads/*
+!data/downloads/.gitkeep
+
+# Sensitive local login/session state. Keep these out of Git even when created
+# intentionally for Codex Desktop Browser/Computer work.
+data/profiles/
+data/backups/
+data/*-auth.json
+data/*auth*.json
+data/*cookies*
+data/*trace*
+data/*debug*
+data/*secret*
+data/*session*
+
+# Creator-specific local notes/config exports that should not ship in the
+# reusable template repo.
+local/
+.local/
+.creator/
+creator-notes.md
+*.local.md
+
+*.log
+*.err
+*.har
+*.sqlite
+*.sqlite3
+*.db
+
+.DS_Store
+.ruff_cache/
+*.egg-info/

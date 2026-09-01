@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "name": "sponsored-campaign-example",
+      "match": {
+        "any": ["SPONSOR_MARKER", "CAMPAIGN_DISCLOSURE_CODE"]
+      },
+      "platforms": ["instagram", "tiktok"],
+      "post_text": {
+        "mode": "description",
+        "prepend": "#ad\n\n"
+      },
+      "disclosures": {
+        "instagram": ["paid-partnership"],
+        "tiktok": ["branded-content"]
+      }
+    }
+  ]
+}
